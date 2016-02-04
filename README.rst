@@ -3,6 +3,11 @@ RabbitMQ
 
 RabbitMQ with management interface enabled and SSL support.
 
+Data storage
+------------
+
+Data is stored in /var/lib/rabbitmq .
+
 
 Environment Variables
 ---------------------
