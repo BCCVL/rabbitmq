@@ -36,13 +36,13 @@ When starting the containe we sholud specify ``-h/--hostname`` explicitly for ea
 Build
 -----
 
-.. code-block: Shell
+.. code-block:: Shell
 
   docker build -t hub.bccvl.org.au/rabbitmq/rabbitmq:3.6.0 .
 
 Publish
 -------
 
-.. code-block: Shell
+.. code-block:: Shell
 
   docker push hub.bccvl.org.au/rabbitmq/rabbitmq:3.6.0
