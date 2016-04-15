@@ -36,18 +36,18 @@ RABBITMQ_DEFAULT_VHOST
 Running the container
 ---------------------
 
-When starting the containe we sholud specify ``-h/--hostname`` explicitly for each daemon so that we don't get a random hostname. The hostname is used as RabbitMQ node name, which is used as storage location for the Mnesia database.
+When starting the container we should specify ``-h/--hostname`` explicitly for each daemon so that we don't get a random hostname. The hostname is used as RabbitMQ node name, which is used as storage location for the Mnesia database.
 
 Build
 -----
 
 .. code-block:: Shell
 
-  docker build -t hub.bccvl.org.au/rabbitmq/rabbitmq:3.6.0 .
+  docker build -t hub.bccvl.org.au/rabbitmq/rabbitmq:3.6.1 .
 
 Publish
 -------
 
 .. code-block:: Shell
 
-  docker push hub.bccvl.org.au/rabbitmq/rabbitmq:3.6.0
+  docker push hub.bccvl.org.au/rabbitmq/rabbitmq:3.6.1

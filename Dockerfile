@@ -1,6 +1,6 @@
-FROM hub.bccvl.org.au/centos/centos7-epel:2016-02-04
+FROM hub.bccvl.org.au/centos/centos7-epel:2016-04-15
 
-RUN yum -y install https://github.com/rabbitmq/rabbitmq-server/releases/download/rabbitmq_v3_6_0/rabbitmq-server-3.6.0-1.noarch.rpm
+RUN yum -y install https://github.com/rabbitmq/rabbitmq-server/releases/download/rabbitmq_v3_6_1/rabbitmq-server-3.6.1-1.noarch.rpm
 
 # remove guest user login on loopback interface
 RUN echo '[{rabbit, [{loopback_users, []}]}].' > /etc/rabbitmq/rabbitmq.config
