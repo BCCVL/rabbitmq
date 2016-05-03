@@ -24,7 +24,7 @@ def rpm_version(img, pkg) {
     def rpm_version
 
     img.inside() {
-        sh("rpm -q --queryformat '%{VERSION}-%{RELEASE}' > RPM_VERSION')
+        sh("rpm -q --queryformat '%{VERSION}-%{RELEASE}' '${pkg}' > RPM_VERSION")
         rpm_version = readFile('RPM_VERSION')
     }
 
