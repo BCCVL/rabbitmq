@@ -33,6 +33,13 @@ RABBITMQ_DEFAULT_USER
 RABBITMQ_DEFAULT_VHOST
   The initial default RabbitMQ virtual host
 
+HOSTNAME
+  Rabbitmq uses this to determine the location of the mnesia database. In case of a clustered setup,
+  this should be a resolvable name.
+
+RABBITMQ_NODENAME
+  Defaults to rabbit@HOSTNAME. Needs to be configured in case two rabbitmq instances run on the same host.
+
 Running the container
 ---------------------
 
